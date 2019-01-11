@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Portend</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/png" href={{ url_for('static', filename="images/favicon.ico") }}>
+    <!-- Place favicon.ico in the root directory -->
+
+	<!-- css  -->
+	<!-- Bootstrap CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/bootstrap.min.css") }}>
+	<!-- Icon Font CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/font-awesome.min.css") }}>
+	<!-- slicknav.min.css
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/slicknav.min.css") }}>
+	<!-- cssanimation.min.css
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/animation.min.css") }}>
+	<!-- Animate CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/animate.min.css") }}>
+	<!-- Style CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/style.css") }}>
+	<!-- Responsive CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/responsive.css") }}>
+	<!-- Modernizer JS
+	============================================ -->
+	<script src={{ url_for('static', filename="js/vendor/modernizr-2.8.3.min.js") }}></script>
+</head>
+<body>
+	<header id="header" class="header"><p>Portend</p></header>
+
+    <div class="single-demo text-center predict">
+        <h1 class="prediction">Our Prediction for next stock value is<br>
+            {{ prediction[0] }}</h1>
+        <div class="demo-content"></div>
+    </div>
+
+    <div class="predict">{{ graph }}</div>
+
+    <div>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+        </tr>
+        {% for item in table %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td>{{ item[3] }}</td>
+            <td>{{ item[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+    	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="footer-logo col-xs-12 text-center">
+						<h2 class="cssanimation leSnake sequence">Stock Forecast</h2>
+					</div>
+					<div class="footer-social col-xs-12 text-center">
+                        <a href="#"><i class="fa fa-github"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

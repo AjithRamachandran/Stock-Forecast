@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Stock Forecast</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename="images/favicon.ico") }}">
+    <!-- Place favicon.ico in the root directory -->
+	
+	<!-- css  -->
+	<!-- Bootstrap CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/bootstrap.min.css") }}>
+	<!-- Icon Font CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/font-awesome.min.css") }}>
+	<!-- slicknav.min.css
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/slicknav.min.css") }}>
+	<!-- cssanimation.min.css
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/animation.min.css") }}>
+	<!-- Animate CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/animate.min.css") }}>
+	<!-- Style CSS
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/style.css") }}>
+	<!-- Responsive CSS 
+	============================================ -->
+	<link rel="stylesheet" href={{ url_for('static', filename="css/responsive.css") }}>
+	<!-- Modernizer JS
+	============================================ -->
+	<script src={{ url_for('static', filename="js/vendor/modernizr-2.8.3.min.js") }}></script>
+</head>
+<body>
+	<!--Start Preloader-->
+    <div class="preloader-wrap">
+        <div class="spinner"></div>
+    </div>
+	<!-- Hero
+	============================================ -->
+	<div class="hero-wrapper text-center">
+		<div class="hero-wrapper-text">
+			<div class="hero-content">
+				<div class="table">
+					<div class="table-cell">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<h1 class="cssanimation effect3d">Stock Forecast</h1>
+                                    <h2 class="cssanimation effect3d">Welcome to future!</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Demo Section
+	============================================ -->
+	<div class="demo-area">
+		<div class="container ptb-100">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo text-center">
+						<div class="demo-img">
+							<a href="/ms"><img src={{ url_for('static', filename='images/microsoft.png') }} height="300" width="300" alt=""/></a>
+						</div>
+						<div class="demo-content"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo text-center">
+						<div class="demo-img">
+							<a href="/intel"><img src={{ url_for('static', filename='images/intel.png') }} height="300" width="300"  alt=""/></a>
+						</div>
+						<div class="demo-content"></div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<div class="single-demo text-center">
+						<div class="demo-img">
+							<a href="/apple"><img src={{ url_for('static', filename='images/apple.jpg') }} height="300" width="300" alt=""/></a>
+						</div>
+						<div class="demo-content"></div>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Feature Section
+	============================================ -->
+	<div id="feature" class="feature-area bg-off-white padding-90 fix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="section-title text-center col-xs-12">
+						<h1 class="cssanimation leFadeInRight sequence">What Do We Do?</h1>
+						<p>We Try to predict the stock Prices of these Tech Giants along with sharing the Statistics</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer Top Area
+	============================================ -->
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="footer-logo col-xs-12 text-center">
+						<h2 class="cssanimation leSnake sequence">Stock Forecast</h2>
+					</div>
+					<div class="footer-social col-xs-12 text-center">
+                        <a href="#"><i class="fa fa-github"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer Bottom Area
+	============================================ -->
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- Copyright -->
+				<div class="col-xs-12">
+					<div class="copyright col-xs-12 text-center">
+						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- JS -->
+
+<!-- jQuery JS
+============================================ -->
+<script src={{ url_for('static', filename="js/vendor/jquery-1.12.0.min.js") }}></script>
+<!-- Bootstrap JS
+============================================ -->
+<script src={{ url_for('static', filename="js/bootstrap.min.js") }}></script>
+<!-- jquery.scrollup.min.js
+============================================ -->
+<script src={{ url_for('static', filename="js/jquery.scrollup.min.js") }}></script>
+<!-- mouse-scroll.js
+============================================ -->
+<script src={{ url_for('static', filename="js/mouse-scroll.js") }}></script>
+<!-- letteranimation.js
+============================================ -->
+<script src={{ url_for('static', filename="js/letteranimation.js") }}></script>
+<!-- jquery.slicknav.min.js
+============================================ -->
+<script src={{ url_for('static', filename="js/jquery.slicknav.min.js") }}></script>
+<!-- Main JS
+============================================ -->
+<script src={{ url_for('static', filename="js/main.js") }}></script>
+
+</body>
+</html>
