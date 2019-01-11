@@ -1,2 +1,3 @@
 # Stock-Forecast
-A stock prediction web application with Flask
+A stock prediction web application with Flask and Keras
+ 
